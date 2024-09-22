@@ -274,11 +274,14 @@
         padding: 0px 20px;
         padding-bottom: 20px;
     }
+    .counter{
+        width: 40px
+    }
     .counter h1{
         font-size: 50px;
     }
     .counter p{
-        font-size: 20px;
+        font-size: 16px;
         bottom: 50px;
         line-height: 20px;
     }
