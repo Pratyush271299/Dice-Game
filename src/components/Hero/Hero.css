@@ -1,0 +1,307 @@
+.home-page{
+    height: 582px;
+    width: 1182px;
+    display: flex;
+    justify-content: center;
+    padding: 180px 129px;
+}
+.home-left-section, .home-right-section{
+    flex: 1;
+}
+.home-left-section{
+    width: auto;
+    height: 500px;
+}
+ .home-left-section{
+    width: 50%;
+ }
+.home-right-section-content{
+    padding: 167px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 50px;
+}
+.home-right-section-content h1{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 144px;
+    margin: auto;
+    margin-right: 0px;
+}
+.home-right-section-content button{
+    width: 200px;
+    height: 44px;
+    border-radius: 5px;
+    padding: 10px 18px;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.home-right-section-content button:hover{
+    transform: scale(1.1);
+}
+.game-page{
+    height: 100vh;
+    width: 100vw;
+}
+.game-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 34px 80px 0px 80px;
+}
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+}
+.counter h1{
+    font-size: 100px;
+    font-weight: 500;
+    line-height: 150px;
+    margin: 0px;
+}
+.counter p{
+    position: relative;
+    bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0px;
+}
+.number-selector{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+}
+.numbers{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.number-item{
+    width: 72px;
+    height: 72px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    transition: transform 0.3s ease;
+}
+.number-item:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+.number-item-selected{
+    width: 72px;
+    height: 72px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    transition: transform 0.3s ease;
+    background-color: black;
+    color: white;
+}
+.error-msg{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    color: red;
+    position: absolute;
+    top: -70px;
+    right: 0px;
+}
+.number-selector span{
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+.game-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 250px;
+    margin: auto;
+}
+.dice{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dice img{
+    cursor: pointer;
+}
+.dice p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    cursor:default;
+}
+.game-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 88%;
+}
+.reset-btn, .rules-btn{
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.reset-btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.2s background ease-in; 
+}
+.rules-btn{
+    background-color: black;
+    color: white;
+    transition: 0.2s background ease-in; 
+}
+.reset-btn:hover{
+    background-color: black;
+    color: white;   
+    transition: 0.2s background ease-in; 
+}
+.rules-btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black; 
+    transition: 0.2s background ease-in;
+}
+.rules-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+    gap: 24px;
+    border: none;
+    width: 794px;
+    height: 208px;
+    margin: 40px auto;
+    background-color: #fbf1f1;
+}
+.rules-container h1{
+    margin: 15px 0px 0px 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+.rules-list{
+    list-style-type: none;
+}
+.rules-item{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+}
+.dice-roll{
+    animation: roll 0.2s ease-in-out forwards;
+}
+@keyframes roll {
+    0% {
+        transform: rotate(0deg);
+      }
+    25% {
+        transform: rotate(90deg);
+      }
+    50% {
+        transform: rotate(180deg);
+      }
+    75% {
+        transform: rotate(270deg);
+      }
+    100% {
+        transform: rotate(360deg);
+      }
+}
+
+@media (max-width: 600px) {
+    .home-page{
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+    }
+    .home-left-section{
+        width: 100%;
+        margin-top: 0px;
+        padding: 20px 0px;
+    }
+    .home-right-section-content{
+        padding: 0px;
+        justify-content: center;
+        gap: 30px;
+    }
+    .home-right-section-content button{
+        align-self: center;
+    }
+    .home-right-section-content h1{
+        line-height: 100px;
+        margin-left: 20px;
+        align-self: center;
+    }
+    .game-details{
+        padding: 0px 20px;
+        padding-bottom: 20px;
+    }
+    .counter h1{
+        font-size: 50px;
+    }
+    .counter p{
+        font-size: 20px;
+        bottom: 50px;
+        line-height: 20px;
+    }
+    .numbers{
+        gap: 15px;
+        padding-top: 40px;
+    }
+    .number-item,.number-item-selected{
+        width: 50px;
+        height: 50px;
+    }
+    .error-msg{
+        font-size: 18px;
+        top: -20px;
+    }
+    .rules-container{
+        width: 550px;
+        padding: 0px 0px 20px 0px;
+    }
+    .rules-list{
+        padding: 0px 10px 10px 20px;
+    }
+    .rules-container h1{
+        padding-left: 20px;
+    }
+}
